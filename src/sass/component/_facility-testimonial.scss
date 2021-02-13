@@ -1,0 +1,111 @@
+// FACILITY
+.facility {
+  background-color: $light;
+  padding: 2rem 0;
+
+  .flex {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  &__item {
+    flex: 1 1 25rem;
+    text-align: center;
+    padding: 2rem;
+
+    span {
+      display: inline-block;
+      font-size: 2.2rem;
+      color: $black;
+      background-color: $light;
+      border: 2px solid $white;
+      padding: 3rem;
+      border-radius: 50%;
+      position: relative;
+
+      i {
+        position: relative;
+        z-index: 10;
+        transition: all 0.4s linear;
+      }
+
+      &:hover i {
+        transform: rotateY(180deg);
+      }
+    }
+
+    span::after {
+      display: inline-block;
+      content: "";
+      background-color: $white;
+      width: 80%;
+      height: 80%;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: $black;
+    }
+  }
+}
+
+// TESTIMONIAL
+.testimonial {
+  padding: 4rem 0;
+  background-color: $black;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba($light, 0.9);
+  }
+
+  &__box-img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      max-height: 100%;
+      transform: translateX(-25px);
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    text-align: center;
+    color: currentColor;
+    line-height: 1.4;
+    margin: 3rem;
+  }
+  &__name {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: currentColor;
+  }
+  &__info {
+    font-size: 1.6rem;
+    color: currentColor;
+    margin-top: 1rem;
+  }
+
+  &__bullets {
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .glide__bullet--active {
+    background-color: $white;
+  }
+}

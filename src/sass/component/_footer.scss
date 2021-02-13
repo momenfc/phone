@@ -1,0 +1,81 @@
+.footer {
+  background-color: $black;
+  padding: 4rem 0 2rem;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__col {
+    flex: 1 1;
+    margin-bottom: 2.5rem;
+
+    @include respond("medium-screen") {
+      flex: 1 1 50%;
+    }
+    @include respond("small-screen") {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+
+    &--4 {
+      li {
+        padding: 0.6rem 0;
+      }
+    }
+  }
+
+  .heading-5 {
+    margin-bottom: 1.5rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: $gray;
+
+    i {
+      color: rgba($light, 0.7);
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__link {
+    color: $gray;
+    display: inline-block;
+    padding: 0.5rem 0;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: rgba($primary, 0.5);
+    }
+  }
+
+  ///////////////////////////
+  &__copyright {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: rgba($light, 0.6);
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba($light, 0.1);
+
+    span {
+      transition: 0.4s;
+      cursor: none;
+
+      @include respond("small-screen") {
+        display: block;
+        padding: 1rem;
+      }
+    }
+    span:hover {
+      color: rgba($primary, 0.5);
+    }
+  }
+}

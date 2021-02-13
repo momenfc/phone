@@ -1,0 +1,39 @@
+// COLOR
+$primary: #eb0028;
+$secondary: #2b1f4d;
+$black: #222222;
+$black-1: #444444;
+$gray: #777777;
+$white: #fff;
+$light: #f1f1f1;
+$yellow: #ffcc00;
+$green: #59b210;
+
+// BREAK POINT
+$bigest-screen: 62.5em; //1000px
+$big-screen: 56.25em; //900px
+$medium-screen: 50em; //800px
+$small-screen: 31.25em; //500px
+
+@mixin respond($breakPoint) {
+  @if $breakPoint == "bigest-screen" {
+    @media only screen and (max-width: $bigest-screen) {
+      @content;
+    }
+  }
+  @if $breakPoint == "big-screen" {
+    @media only screen and (max-width: $big-screen) {
+      @content;
+    }
+  }
+  @if $breakPoint == "medium-screen" {
+    @media only screen and (max-width: $medium-screen) {
+      @content;
+    }
+  }
+  @if $breakPoint == "small-screen" {
+    @media only screen and (max-width: $small-screen) {
+      @content;
+    }
+  }
+}

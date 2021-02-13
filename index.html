@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <!-- AOS ANIMATION -->
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="src/sass/main.css" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <title>Phone</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- NAVIGATION -->
+      <div class="navigation">
+        <div class="container">
+          <nav class="nav">
+            <!-- LOGO -->
+            <div class="nav__logo">
+              <a href="/#/" class="nav__logo__link">phone</a>
+            </div>
+            <div class="nav__menu-toggle">
+              <i id="menu-open-btn" class="fas fa-bars"></i>
+            </div>
+            <!-- MENU -->
+            <div class="nav__menu">
+              <div class="nav__menu-top">
+                <span>phone</span>
+                <i id="menu-close-btn" class="fas fa-times"></i>
+              </div>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="/#/" class="nav__link">home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#category" class="nav__link">category</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#blog" class="nav__link">blog</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contact" class="nav__link">contact</a>
+                </li>
+              </ul>
+            </div>
+            <!-- ICONS -->
+            <div class="nav__icons">
+              <a href="/#/" class="nav__icon"> <i class="fas fa-user"></i></a>
+              <a href="/#/" class="nav__icon"> <i class="fas fa-search"></i></a>
+              <a href="/#/" class="nav__icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="nav__cart-navigation">4</span></a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main-container" id="main-container"></main>
+
+    <footer class="footer" data-aos="fade-up">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__col footer__col--1">
+            <h5 class="heading-5">extras</h5>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">brands</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">gift cerificates</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">affiliate</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">specials</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">site map</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__col footer__col--2">
+            <h5 class="heading-5">information</h5>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">about us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">terms & conditions</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">site map</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__col footer__col--3">
+            <h5 class="heading-5">my account</h5>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">my account</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">order history</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">wish list</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">vewsletter</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">returns</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__col footer__col--4" id="contact">
+            <h5 class="heading-5">contact us</h5>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <i class="fa fa-map-marker-alt"></i>42 dream house, dreammy
+                street, 7131 dreamville, USA
+              </li>
+              <li class="footer__item">
+                <i class="fa fa-envelope"></i> company@gmail.com
+              </li>
+              <li class="footer__item">
+                <i class="fa fa-phone-alt"></i>456-654-1254
+              </li>
+              <li class="footer__item">
+                <i class="fa fa-paper-plane"></i>dream city,USA
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          &copy;created in 2021 by <span>momen nasser</span>
+        </div>
+      </div>
+    </footer>
+    <button class="scrollTop"><i class="fa fa-arrow-up"></i></button>
+    <div class="popup">
+      <div class="popup__content">
+        <div class="popup__box-img">
+          <img src="images/popup.jpg" alt="popup image" />
+        </div>
+        <div class="popup__text">
+          <h1 class="heading-1">get discount <span>30%</span> off</h1>
+          <p>
+            Sign up to our newsletter and save 30% for you next purchase. No
+            spam, we promise!
+          </p>
+          <form class="form">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email..."
+              required
+            />
+            <input type="submit" value="subscribe" class="btn btn-secondary" />
+          </form>
+          <button class="popup__close">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <!-- AOS ANIMATION -->
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

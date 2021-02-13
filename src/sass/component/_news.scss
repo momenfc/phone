@@ -1,0 +1,106 @@
+.news {
+  margin: 3rem 0;
+
+  .glide-news {
+    margin: 5rem 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $light;
+  }
+
+  &__box-img {
+    width: 100%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__content {
+    padding: 1.5rem;
+  }
+
+  &__heading {
+    text-transform: capitalize;
+  }
+
+  &__creator {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+    color: $gray;
+  }
+
+  .btn {
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+  //////////////////////////////
+  &__subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba($gray, 0.4);
+    padding: 4rem 0;
+
+    & > * {
+      flex: 1 1 45rem;
+    }
+
+    &__text {
+      margin-right: 2rem;
+      p {
+        font-size: 2.2rem;
+        text-transform: uppercase;
+      }
+      span {
+        display: block;
+        font-size: 1.6rem;
+        color: $gray;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .form {
+      margin-top: 2rem;
+      text-align: center;
+
+      input {
+        height: 5rem;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        border: 0;
+        outline: 0;
+      }
+
+      input[type="email"] {
+        width: 32rem;
+        padding-left: 2rem;
+        background-color: $light;
+      }
+
+      input[type="submit"] {
+        width: 12rem;
+        text-transform: capitalize;
+        color: $light;
+        background-color: $black;
+        margin-left: -3px;
+        transition: all.4s ease-in-out;
+
+        &:hover {
+          background-color: $black-1;
+        }
+      }
+    }
+  }
+}

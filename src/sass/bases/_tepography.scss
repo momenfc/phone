@@ -1,0 +1,142 @@
+.heading-1 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+  color: $black;
+}
+.heading-2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  color: $black;
+  line-height: 1.5;
+  padding: 0.5rem 0;
+}
+.heading-3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black;
+  padding: 0.5rem 0;
+}
+.heading-4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  color: $gray;
+  padding: 0.5rem 0;
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &.active {
+    color: $black;
+  }
+}
+.bg-light {
+  background-color: $light;
+  padding: 1.5rem 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 1px solid $gray;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    border: 0.4rem solid currentColor;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.heading-5 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: rgba($light, 0.7);
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid $black;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+
+  &.dark {
+    color: $light;
+    background-color: $black;
+  }
+
+  &.light {
+    color: $black;
+    background-color: $light;
+  }
+  &.secondary {
+    color: $light;
+    background-color: $secondary;
+  }
+
+  &.dark:hover {
+    color: $black;
+    background-color: $light;
+  }
+  &.light:hover {
+    color: $light;
+    background-color: $black;
+  }
+}
+
+.btn-primary {
+  color: $black;
+  background-color: $light;
+  padding: 1.5rem 4rem;
+
+  &:hover {
+    color: $light;
+    background-color: $black;
+  }
+}
+
+.btn-secondary {
+  color: $light;
+  background-color: $secondary;
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+
+  &:hover {
+    color: $secondary;
+    background-color: $light;
+  }
+}
+
+.scrollTop {
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 6rem;
+  font-size: 2.2rem;
+  color: $primary;
+  background-color: $light;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  box-shadow: 0 5px 5px rgba($black, 0.5);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
